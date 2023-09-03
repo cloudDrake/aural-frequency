@@ -1,14 +1,14 @@
 "use client"
+import { useState } from 'react'
 import Header from '@/components/Navbar/Header'
 import Drawer from '@/components/Navbar/Drawer'
 import Card from '@/components/Navbar/Card'
 
 interface IProps {
-    isOpen: boolean;
-    setIsOpen: (isOpen: boolean) => void;
 }
 
-export default function Navbar({ isOpen, setIsOpen }: IProps) {
+export default function Navbar({ }: IProps) {
+    const [isOpen, setIsOpen] = useState(false);
     return (
         <>
             <Header setIsOpen={setIsOpen} isOpen={isOpen} />

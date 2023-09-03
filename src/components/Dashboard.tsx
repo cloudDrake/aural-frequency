@@ -1,13 +1,6 @@
-'use client'
-import { useState } from 'react';
-import Navbar from '@/components/Navbar/Navbar'
-
 export default function Dashboard() {
-
-    const [isOpen, setIsOpen] = useState(false);
     return (
         <>
-            <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
             <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
                 <a
                     href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"

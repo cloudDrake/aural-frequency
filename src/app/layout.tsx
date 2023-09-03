@@ -17,9 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={inter.className} style={{height: '100vh'}}>
         <Navbar />
+          <main className='h-[calc(100vh-56px)]'>
         {children}
+        </main>
       </body>
     </html>
   )
